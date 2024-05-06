@@ -1,13 +1,586 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acamemy</title>
-    <link rel="stylesheet" href="./src/output.css">
-</head>
-<body>
-    <h1 class="text-red-700 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vitae.</h1>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academy</title>
+    <link rel="stylesheet" href="./src/output.css" />
+
+  </head>
+
+  <body class="relative">
+    <!-- header start  -->
+    <header class="text-gray-600 body-font bg-sky-500">
+      <div
+        class="container absolute z-[999] translate-x-[-50%] left-[50%] flex flex-wrap p-5 flex-col md:flex-row items-center justify-between max-w-[1240px] m-auto"
+      >
+        <a
+          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+        >
+          <img
+            src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2019/06/learn-dash-white-logo.svg"
+            alt=""
+          />
+        </a>
+        <nav
+          class="md:ml-auto md:mr-auto flex flex-wrap items-center text-sm md:text-lg text-white justify-center"
+        >
+          <a class="mr-5 hover:text-gray-900 duration-500">Home</a>
+          <a class="mr-5 hover:text-gray-900 duration-500">All Courses</a>
+          <a class="mr-5 hover:text-gray-900 duration-500">About</a>
+          <a class="mr-5 hover:text-gray-900 duration-500">Contact</a>
+          <a class="mr-5 hover:text-gray-900 duration-500">My Account</a>
+        </nav>
+        <button
+          class="inline-flex items-center bg-slate-200 border-0 py-1 px-3 focus:outline-none text-blue-600 hover:bg-green-300 hover:border-blue-500 hover:text-white rounded text-base mt-4 md:mt-0 hover:translate-x-3 duration-1000"
+        >
+          Read more
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-4 h-4 ml-1"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <!-- header end  -->
+
+    <main>
+      <!-- hero section start  -->
+
+      <section
+        class="h-auto md:h-screen w-full bg-[url(https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2019/06/ld2.jpg)] flex justify-center items-center flex-col pt-24 pb-12 md:pb-24 relative block z-10 before:content-[''] before:absolute before:inset-0 before:block before:bg-gradient-to-r before:from-green-400 before:to-blue-500 before:opacity-75 before:z-[-5]"
+      >
+        <div
+          class="container max-w-[1240px] mx-auto flex flex-row items-center text-center my-40"
+        >
+          <div class="flex flex-col items-center text-center w-[90%] lg:w-[55%] m-auto">
+            <h1
+              class="title-font sm:text-5xl text-3xl mb-4 font-bold text-white"
+            >
+              Learn from Industry Experts
+            </h1>
+            <p
+              class="mb-8 leading-relaxed text-slate-300 font-medium text-lg mt-6"
+            >
+              Enter description text here. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Ut elit tellus, luctus nec
+              ullamcorper mattis, pulvinar dapibus leo.​
+            </p>
+            <!-- Component: Large primary basic button -->
+            <button
+  class="relative px-8 py-3 rounded-md bg-white isolation-auto z-10 border-2 text-lime-600 text-lg border-lime-500 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-lime-500 before:-z-10 before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700 hover:text-white hover:translate-y-3 duration-1000"
+>
+  
+View All Courses
+</button>
+
+            <!-- End Large primary basic button -->
+          </div>
+        </div>
+      </section>
+      <!-- hero section end  -->
+
+      <!-- card section start -->
+      <section class="mb-20 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 max-w-[1240px] mx-auto gap-10 -mt-20 relative z-[999] px-8">
+        
+          <div class="text-center bg-white rounded shadow-md shadow-slate-400 text-slate-500 py-6 hover:translate-y-3 duration-1000">
+            <!-- Icon -->
+            <figure class="p-4 pb-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                class="w-12 h-12 mx-auto">
+                <path
+                fill="#6cea92"
+                  d="M187.7 153.7c-34 0-61.7 25.7-61.7 57.7 0 31.7 27.7 57.7 61.7 57.7s61.7-26 61.7-57.7c0-32-27.7-57.7-61.7-57.7zm143.4 0c-34 0-61.7 25.7-61.7 57.7 0 31.7 27.7 57.7 61.7 57.7 34.3 0 61.7-26 61.7-57.7 .1-32-27.4-57.7-61.7-57.7zm156.6 90l-6 4.3V49.7c0-27.4-20.6-49.7-46-49.7H76.6c-25.4 0-46 22.3-46 49.7V248c-2-1.4-4.3-2.9-6.3-4.3-15.1-10.6-25.1 4-16 17.7 18.3 22.6 53.1 50.3 106.3 72C58.3 525.1 252 555.7 248.9 457.5c0-.7 .3-56.6 .3-96.6 5.1 1.1 9.4 2.3 13.7 3.1 0 39.7 .3 92.8 .3 93.5-3.1 98.3 190.6 67.7 134.3-124 53.1-21.7 88-49.4 106.3-72 9.1-13.8-.9-28.3-16.1-17.8zm-30.5 19.2c-68.9 37.4-128.3 31.1-160.6 29.7-23.7-.9-32.6 9.1-33.7 24.9-10.3-7.7-18.6-15.5-20.3-17.1-5.1-5.4-13.7-8-27.1-7.7-31.7 1.1-89.7 7.4-157.4-28V72.3c0-34.9 8.9-45.7 40.6-45.7h317.7c30.3 0 40.9 12.9 40.9 45.7v190.6z"
+                />
+              </svg>
+            </figure>
+            <!-- Body-->
+            <div class="p-4 w-[80%] m-auto">
+              <h3 class="mb-4 text-xl md:text-2xl font-bold text-slate-700">
+                Actionable Training
+              </h3>
+              <p class="text-sm md:text-lg">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+        
+
+        
+          <div
+            class="overflow-hidden text-center bg-white rounded shadow-md shadow-slate-400 text-slate-500 py-6 hover:translate-y-3 duration-1000">
+            <!-- Icon -->
+            <figure class="p-4 pb-0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-12 h-12 mx-auto"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#6cea92" d="M192 104.8c0-9.2-5.8-17.3-13.2-22.8C167.2 73.3 160 61.3 160 48c0-26.5 28.7-48 64-48s64 21.5 64 48c0 13.3-7.2 25.3-18.8 34c-7.4 5.5-13.2 13.6-13.2 22.8c0 12.8 10.4 23.2 23.2 23.2H336c26.5 0 48 21.5 48 48v56.8c0 12.8 10.4 23.2 23.2 23.2c9.2 0 17.3-5.8 22.8-13.2c8.7-11.6 20.7-18.8 34-18.8c26.5 0 48 28.7 48 64s-21.5 64-48 64c-13.3 0-25.3-7.2-34-18.8c-5.5-7.4-13.6-13.2-22.8-13.2c-12.8 0-23.2 10.4-23.2 23.2V464c0 26.5-21.5 48-48 48H279.2c-12.8 0-23.2-10.4-23.2-23.2c0-9.2 5.8-17.3 13.2-22.8c11.6-8.7 18.8-20.7 18.8-34c0-26.5-28.7-48-64-48s-64 21.5-64 48c0 13.3 7.2 25.3 18.8 34c7.4 5.5 13.2 13.6 13.2 22.8c0 12.8-10.4 23.2-23.2 23.2H48c-26.5 0-48-21.5-48-48V343.2C0 330.4 10.4 320 23.2 320c9.2 0 17.3 5.8 22.8 13.2C54.7 344.8 66.7 352 80 352c26.5 0 48-28.7 48-64s-21.5-64-48-64c-13.3 0-25.3 7.2-34 18.8C40.5 250.2 32.4 256 23.2 256C10.4 256 0 245.6 0 232.8V176c0-26.5 21.5-48 48-48H168.8c12.8 0 23.2-10.4 23.2-23.2z"/></svg>
+            </figure>
+            <!-- Body-->
+            <div class="p-4 w-[80%] m-auto">
+              <h3 class="mb-4 text-xl md:text-2xl font-bold text-slate-700">
+                Interesting Quizzes
+              </h3>
+              <p class="text-sm md:text-lg">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+        
+
+        
+          <div
+            class="overflow-hidden text-center bg-white rounded shadow-md shadow-slate-400 text-slate-500 py-6 hover:translate-y-3 duration-1000">
+            <!-- Icon -->
+            <figure class="p-4 pb-0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-12 h-12 mx-auto"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#6cea92" d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z"/></svg>
+            </figure>
+            <!-- Body-->
+            <div class="p-4 w-[80%] m-auto">
+              <h3 class="mb-4 text-xl md:text-2xl font-bold text-slate-700">
+                Premium Material
+              </h3>
+              <p class="text-sm md:text-lg">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+      </section>
+
+      <!-- card section end -->
+
+      <!-- section start  -->
+      <section class="text-gray-600 body-font max-w-[1240px] mx-auto">
+        <div class="container px-5 py-24 mx-auto">
+          <!-- heading start  -->
+          <div
+            class="flex flex-wrap w-full mb-20 flex-col items-center text-center"
+          >
+            <h2
+              class="sm:text-4xl text-2xl font-bold title-font mb-10 text-gray-900"
+            >
+              Our Most Popular Courses
+            </h2>
+            <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac
+              eros ut dui bibendum ultricies. Maecenas egestas fringilla semper.
+            </p>
+          </div>
+          <!-- heading end  -->
+
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 md:w-1/3">
+              <div
+                class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+              >
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2019/05/course-1-free-img-768x428.jpg"
+                  alt="blog"
+                />
+                <div class="p-6">
+                  <h2 class="title-font text-xl font-medium text-gray-900 mb-3">
+                    Social Media Marketing
+                  </h2>
+                  <p class="leading-relaxed mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    pellentesque porta.
+                  </p>
+                  <button
+                    class="mx-auto mt-6 text-white bg-green-400 border-0 py-2 px-5 focus:outline-none hover:bg-green-300 duration-500 rounded w-full"
+                  >
+                    See more
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3">
+              <div
+                class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+              >
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2019/05/course-2-free-img-768x428.jpg"
+                  alt="blog"
+                />
+                <div class="p-6">
+                  <h2 class="title-font text-xl font-medium text-gray-900 mb-3">
+                    Email Marketing Strategies
+                  </h2>
+                  <p class="leading-relaxed mb-3">
+                    In porttitor ipsum eu justo condimentum euismod ullamcorper
+                    viverra.
+                  </p>
+                  <button
+                    class="w-full mx-auto mt-6 text-white bg-green-400 border-0 py-2 px-5 focus:outline-none hover:bg-green-300 duration-500 rounded"
+                  >
+                    See more
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3">
+              <div
+                class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+              >
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2016/12/course-3-free-img-768x428.jpg"
+                  alt="blog"
+                />
+                <div class="p-6">
+                  <h2 class="title-font text-xl font-medium text-gray-900 mb-3">
+                    Content Marketing
+                  </h2>
+                  <p class="leading-relaxed mb-3">
+                    Repellat perspiciatis cum! Doloremque ea viverra eu
+                    doloremque.
+                  </p>
+                  <button
+                    class="w-full mx-auto mt-6 text-white bg-green-400 border-0 py-2 px-5 focus:outline-none hover:bg-green-300 duration-500 rounded"
+                  >
+                    See more
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- logo section start  -->
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 max-w-[1240px] mx-auto">
+          <div class="flex flex-wrap justify-between -m-4 text-center">
+            <div class="p-2 sm:w-1/6 w-1/2">
+              <img
+                src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-1.svg"
+                alt=""
+              />
+            </div>
+            <div class="p-2 sm:w-1/6 w-1/2">
+              <img
+                src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-2.svg"
+                alt=""
+              />
+            </div>
+            <div class="p-2 sm:w-1/6 w-1/2">
+              <img
+                src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-3.svg"
+                alt=""
+              />
+            </div>
+            <div class="p-2 sm:w-1/6 w-1/2">
+              <img
+                src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-4.svg"
+                alt=""
+              />
+            </div>
+
+            <div class="p-2 sm:w-1/6 w-1/2">
+              <img
+                src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-5.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- logo section end  -->
+
+      <!-- testimonial start  -->
+      <section class="max-w-[1240px] mx-auto py-[100px] px-5">
+        <h2
+          class="title-font sm:text-4xl text-3xl mb-10 font-semibold text-black text-center"
+        >
+          What Our Students Have to Say
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- Component: Elevated base sized testimonial with avatar -->
+          <div
+            class="overflow-hidden bg-white rounded shadow-2xl text-slate-500 shadow-slate-200"
+          >
+            <div class="relative p-6">
+              <figure class="relative z-10">
+                <blockquote class="p-6 text-sm md:text-lg leading-relaxed">
+                  <p>
+                    Words can be like X-rays, if you use them properly—they’ll
+                    go through anything. You read and you’re pierced.
+                  </p>
+                </blockquote>
+                <figcaption
+                  class="flex items-center gap-4 p-6 pt-2 text-sm text-green-500"
+                >
+                  <img
+                    src="https://i.pravatar.cc/40?img=11"
+                    alt="user name"
+                    title="user name"
+                    width="48"
+                    height="48"
+                    class="max-w-full rounded-full shrink-0"
+                  />
+                  <div class="flex flex-col gap-1">
+                    <span class="font-bold uppercase">George Orwell</span>
+                    <cite class="not-italic"
+                      ><a href="http://www.george-orwell.org/1984/0.html"
+                        >From Dallas, USA</a
+                      ></cite
+                    >
+                  </div>
+                </figcaption>
+              </figure>
+              <svg
+                aria-hidden="true"
+                class="absolute z-0 h-16 left-6 top-6"
+                viewBox="0 0 17 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.79187 3.83333C2.66179 3.83333 2.53696 3.85316 2.41271 3.87125C2.45296 3.73591 2.49437 3.59825 2.56087 3.47458C2.62737 3.29491 2.73121 3.13916 2.83446 2.98225C2.92079 2.8125 3.07304 2.69758 3.18504 2.55233C3.30229 2.41116 3.46212 2.31725 3.58871 2.2C3.71296 2.0775 3.87571 2.01625 4.00521 1.92991C4.14054 1.85233 4.25837 1.76658 4.38437 1.72575L4.69879 1.59625L4.97529 1.48133L4.69237 0.35083L4.34412 0.43483C4.23271 0.46283 4.09679 0.495496 3.94221 0.53458C3.78412 0.563746 3.61554 0.643663 3.42771 0.71658C3.24221 0.799413 3.02754 0.855413 2.82804 0.988413C2.62737 1.11558 2.39579 1.22175 2.19162 1.39208C1.99387 1.56766 1.75529 1.71991 1.57912 1.94333C1.38662 2.15216 1.19646 2.3715 1.04887 2.62116C0.877957 2.85916 0.761873 3.1205 0.639373 3.37891C0.52854 3.63733 0.43929 3.90158 0.366373 4.15825C0.228123 4.67275 0.16629 5.16158 0.142373 5.57983C0.12254 5.99866 0.134207 6.34691 0.158707 6.59891C0.167457 6.71791 0.18379 6.83341 0.195457 6.91333L0.21004 7.01133L0.225207 7.00783C0.328959 7.49248 0.567801 7.93786 0.914102 8.29243C1.2604 8.64701 1.70001 8.89631 2.18208 9.01148C2.66415 9.12665 3.16897 9.10299 3.63815 8.94323C4.10733 8.78348 4.52169 8.49416 4.83331 8.10874C5.14493 7.72333 5.34107 7.25757 5.39903 6.76534C5.457 6.27311 5.37443 5.77452 5.16087 5.32726C4.94731 4.88 4.61149 4.50233 4.19225 4.23796C3.77302 3.97358 3.28751 3.8333 2.79187 3.83333V3.83333ZM9.20854 3.83333C9.07846 3.83333 8.95362 3.85316 8.82937 3.87125C8.86962 3.73591 8.91104 3.59825 8.97754 3.47458C9.04404 3.29491 9.14787 3.13916 9.25112 2.98225C9.33746 2.8125 9.48971 2.69758 9.60171 2.55233C9.71896 2.41116 9.87879 2.31725 10.0054 2.2C10.1296 2.0775 10.2924 2.01625 10.4219 1.92991C10.5572 1.85233 10.675 1.76658 10.801 1.72575L11.1155 1.59625L11.392 1.48133L11.109 0.35083L10.7608 0.43483C10.6494 0.46283 10.5135 0.495496 10.3589 0.53458C10.2008 0.563746 10.0322 0.643663 9.84437 0.71658C9.65946 0.799997 9.44421 0.855413 9.24471 0.988997C9.04404 1.11616 8.81246 1.22233 8.60829 1.39266C8.41054 1.56825 8.17196 1.7205 7.99579 1.94333C7.80329 2.15216 7.61312 2.3715 7.46554 2.62116C7.29462 2.85916 7.17854 3.1205 7.05604 3.37891C6.94521 3.63733 6.85596 3.90158 6.78304 4.15825C6.64479 4.67275 6.58296 5.16158 6.55904 5.57983C6.53921 5.99866 6.55087 6.34691 6.57537 6.59891C6.58412 6.71791 6.60046 6.83341 6.61212 6.91333L6.62671 7.01133L6.64187 7.00783C6.74563 7.49248 6.98447 7.93786 7.33077 8.29243C7.67707 8.64701 8.11668 8.89631 8.59875 9.01148C9.08081 9.12665 9.58563 9.10299 10.0548 8.94323C10.524 8.78348 10.9384 8.49416 11.25 8.10874C11.5616 7.72333 11.7577 7.25757 11.8157 6.76534C11.8737 6.27311 11.7911 5.77452 11.5775 5.32726C11.364 4.88 11.0282 4.50233 10.6089 4.23796C10.1897 3.97358 9.70417 3.8333 9.20854 3.83333V3.83333Z"
+                  class="fill-emerald-50"
+                />
+              </svg>
+            </div>
+          </div>
+          <!-- End Elevated base sized testimonial with avatar -->
+          <!-- Component: Elevated base sized testimonial with avatar -->
+          <div
+            class="overflow-hidden bg-white rounded shadow-2xl text-slate-500 shadow-slate-200"
+          >
+            <div class="relative p-6">
+              <figure class="relative z-10">
+                <blockquote class="p-6 text-sm md:text-lg leading-relaxed">
+                  <p>
+                    Words can be like X-rays, if you use them properly—they’ll
+                    go through anything. You read and you’re pierced.
+                  </p>
+                </blockquote>
+                <figcaption
+                  class="flex items-center gap-4 p-6 pt-2 text-sm text-green-500"
+                >
+                  <img
+                    src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2019/05/testimonial1-free-img.jpg"
+                    alt="user name"
+                    title="user name"
+                    width="48"
+                    height="48"
+                    class="max-w-full rounded-full shrink-0"
+                  />
+                  <div class="flex flex-col gap-1">
+                    <span class="font-bold uppercase">Zasha Swan
+                      </span>
+                    <cite class="not-italic"
+                      ><a href="http://www.george-orwell.org/1984/0.html"
+                        >From Australia</a
+                      ></cite
+                    >
+                  </div>
+                </figcaption>
+              </figure>
+              <svg
+                aria-hidden="true"
+                class="absolute z-0 h-16 left-6 top-6"
+                viewBox="0 0 17 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.79187 3.83333C2.66179 3.83333 2.53696 3.85316 2.41271 3.87125C2.45296 3.73591 2.49437 3.59825 2.56087 3.47458C2.62737 3.29491 2.73121 3.13916 2.83446 2.98225C2.92079 2.8125 3.07304 2.69758 3.18504 2.55233C3.30229 2.41116 3.46212 2.31725 3.58871 2.2C3.71296 2.0775 3.87571 2.01625 4.00521 1.92991C4.14054 1.85233 4.25837 1.76658 4.38437 1.72575L4.69879 1.59625L4.97529 1.48133L4.69237 0.35083L4.34412 0.43483C4.23271 0.46283 4.09679 0.495496 3.94221 0.53458C3.78412 0.563746 3.61554 0.643663 3.42771 0.71658C3.24221 0.799413 3.02754 0.855413 2.82804 0.988413C2.62737 1.11558 2.39579 1.22175 2.19162 1.39208C1.99387 1.56766 1.75529 1.71991 1.57912 1.94333C1.38662 2.15216 1.19646 2.3715 1.04887 2.62116C0.877957 2.85916 0.761873 3.1205 0.639373 3.37891C0.52854 3.63733 0.43929 3.90158 0.366373 4.15825C0.228123 4.67275 0.16629 5.16158 0.142373 5.57983C0.12254 5.99866 0.134207 6.34691 0.158707 6.59891C0.167457 6.71791 0.18379 6.83341 0.195457 6.91333L0.21004 7.01133L0.225207 7.00783C0.328959 7.49248 0.567801 7.93786 0.914102 8.29243C1.2604 8.64701 1.70001 8.89631 2.18208 9.01148C2.66415 9.12665 3.16897 9.10299 3.63815 8.94323C4.10733 8.78348 4.52169 8.49416 4.83331 8.10874C5.14493 7.72333 5.34107 7.25757 5.39903 6.76534C5.457 6.27311 5.37443 5.77452 5.16087 5.32726C4.94731 4.88 4.61149 4.50233 4.19225 4.23796C3.77302 3.97358 3.28751 3.8333 2.79187 3.83333V3.83333ZM9.20854 3.83333C9.07846 3.83333 8.95362 3.85316 8.82937 3.87125C8.86962 3.73591 8.91104 3.59825 8.97754 3.47458C9.04404 3.29491 9.14787 3.13916 9.25112 2.98225C9.33746 2.8125 9.48971 2.69758 9.60171 2.55233C9.71896 2.41116 9.87879 2.31725 10.0054 2.2C10.1296 2.0775 10.2924 2.01625 10.4219 1.92991C10.5572 1.85233 10.675 1.76658 10.801 1.72575L11.1155 1.59625L11.392 1.48133L11.109 0.35083L10.7608 0.43483C10.6494 0.46283 10.5135 0.495496 10.3589 0.53458C10.2008 0.563746 10.0322 0.643663 9.84437 0.71658C9.65946 0.799997 9.44421 0.855413 9.24471 0.988997C9.04404 1.11616 8.81246 1.22233 8.60829 1.39266C8.41054 1.56825 8.17196 1.7205 7.99579 1.94333C7.80329 2.15216 7.61312 2.3715 7.46554 2.62116C7.29462 2.85916 7.17854 3.1205 7.05604 3.37891C6.94521 3.63733 6.85596 3.90158 6.78304 4.15825C6.64479 4.67275 6.58296 5.16158 6.55904 5.57983C6.53921 5.99866 6.55087 6.34691 6.57537 6.59891C6.58412 6.71791 6.60046 6.83341 6.61212 6.91333L6.62671 7.01133L6.64187 7.00783C6.74563 7.49248 6.98447 7.93786 7.33077 8.29243C7.67707 8.64701 8.11668 8.89631 8.59875 9.01148C9.08081 9.12665 9.58563 9.10299 10.0548 8.94323C10.524 8.78348 10.9384 8.49416 11.25 8.10874C11.5616 7.72333 11.7577 7.25757 11.8157 6.76534C11.8737 6.27311 11.7911 5.77452 11.5775 5.32726C11.364 4.88 11.0282 4.50233 10.6089 4.23796C10.1897 3.97358 9.70417 3.8333 9.20854 3.83333V3.83333Z"
+                  class="fill-emerald-50"
+                />
+              </svg>
+            </div>
+          </div>
+          <!-- End Elevated base sized testimonial with avatar -->
+          <!-- Component: Elevated base sized testimonial with avatar -->
+          <div
+            class="overflow-hidden bg-white rounded shadow-2xl text-slate-500 shadow-slate-200"
+          >
+            <div class="relative p-6">
+              <figure class="relative z-10">
+                <blockquote class="p-6 text-sm md:text-lg leading-relaxed">
+                  <p>
+                    Words can be like X-rays, if you use them properly—they’ll
+                    go through anything. You read and you’re pierced.
+                  </p>
+                </blockquote>
+                <figcaption
+                  class="flex items-center gap-4 p-6 pt-2 text-sm text-green-500"
+                >
+                  <img
+                    src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2019/05/testimonial3-free-img.jpg"
+                    alt="user name"
+                    title="user name"
+                    width="48"
+                    height="48"
+                    class="max-w-full rounded-full shrink-0"
+                  />
+                  <div class="flex flex-col gap-1">
+                    <span class="font-bold uppercase">Frank Jones
+                    </span>
+                    <cite class="not-italic"
+                      ><a href="http://www.george-orwell.org/1984/0.html"
+                        >From Japan</a
+                      ></cite
+                    >
+                  </div>
+                </figcaption>
+              </figure>
+              <svg
+                aria-hidden="true"
+                class="absolute z-0 h-16 left-6 top-6"
+                viewBox="0 0 17 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.79187 3.83333C2.66179 3.83333 2.53696 3.85316 2.41271 3.87125C2.45296 3.73591 2.49437 3.59825 2.56087 3.47458C2.62737 3.29491 2.73121 3.13916 2.83446 2.98225C2.92079 2.8125 3.07304 2.69758 3.18504 2.55233C3.30229 2.41116 3.46212 2.31725 3.58871 2.2C3.71296 2.0775 3.87571 2.01625 4.00521 1.92991C4.14054 1.85233 4.25837 1.76658 4.38437 1.72575L4.69879 1.59625L4.97529 1.48133L4.69237 0.35083L4.34412 0.43483C4.23271 0.46283 4.09679 0.495496 3.94221 0.53458C3.78412 0.563746 3.61554 0.643663 3.42771 0.71658C3.24221 0.799413 3.02754 0.855413 2.82804 0.988413C2.62737 1.11558 2.39579 1.22175 2.19162 1.39208C1.99387 1.56766 1.75529 1.71991 1.57912 1.94333C1.38662 2.15216 1.19646 2.3715 1.04887 2.62116C0.877957 2.85916 0.761873 3.1205 0.639373 3.37891C0.52854 3.63733 0.43929 3.90158 0.366373 4.15825C0.228123 4.67275 0.16629 5.16158 0.142373 5.57983C0.12254 5.99866 0.134207 6.34691 0.158707 6.59891C0.167457 6.71791 0.18379 6.83341 0.195457 6.91333L0.21004 7.01133L0.225207 7.00783C0.328959 7.49248 0.567801 7.93786 0.914102 8.29243C1.2604 8.64701 1.70001 8.89631 2.18208 9.01148C2.66415 9.12665 3.16897 9.10299 3.63815 8.94323C4.10733 8.78348 4.52169 8.49416 4.83331 8.10874C5.14493 7.72333 5.34107 7.25757 5.39903 6.76534C5.457 6.27311 5.37443 5.77452 5.16087 5.32726C4.94731 4.88 4.61149 4.50233 4.19225 4.23796C3.77302 3.97358 3.28751 3.8333 2.79187 3.83333V3.83333ZM9.20854 3.83333C9.07846 3.83333 8.95362 3.85316 8.82937 3.87125C8.86962 3.73591 8.91104 3.59825 8.97754 3.47458C9.04404 3.29491 9.14787 3.13916 9.25112 2.98225C9.33746 2.8125 9.48971 2.69758 9.60171 2.55233C9.71896 2.41116 9.87879 2.31725 10.0054 2.2C10.1296 2.0775 10.2924 2.01625 10.4219 1.92991C10.5572 1.85233 10.675 1.76658 10.801 1.72575L11.1155 1.59625L11.392 1.48133L11.109 0.35083L10.7608 0.43483C10.6494 0.46283 10.5135 0.495496 10.3589 0.53458C10.2008 0.563746 10.0322 0.643663 9.84437 0.71658C9.65946 0.799997 9.44421 0.855413 9.24471 0.988997C9.04404 1.11616 8.81246 1.22233 8.60829 1.39266C8.41054 1.56825 8.17196 1.7205 7.99579 1.94333C7.80329 2.15216 7.61312 2.3715 7.46554 2.62116C7.29462 2.85916 7.17854 3.1205 7.05604 3.37891C6.94521 3.63733 6.85596 3.90158 6.78304 4.15825C6.64479 4.67275 6.58296 5.16158 6.55904 5.57983C6.53921 5.99866 6.55087 6.34691 6.57537 6.59891C6.58412 6.71791 6.60046 6.83341 6.61212 6.91333L6.62671 7.01133L6.64187 7.00783C6.74563 7.49248 6.98447 7.93786 7.33077 8.29243C7.67707 8.64701 8.11668 8.89631 8.59875 9.01148C9.08081 9.12665 9.58563 9.10299 10.0548 8.94323C10.524 8.78348 10.9384 8.49416 11.25 8.10874C11.5616 7.72333 11.7577 7.25757 11.8157 6.76534C11.8737 6.27311 11.7911 5.77452 11.5775 5.32726C11.364 4.88 11.0282 4.50233 10.6089 4.23796C10.1897 3.97358 9.70417 3.8333 9.20854 3.83333V3.83333Z"
+                  class="fill-emerald-50"
+                />
+              </svg>
+            </div>
+          </div>
+          <!-- End Elevated base sized testimonial with avatar -->
+
+          <!-- Component: Elevated base sized testimonial with avatar -->
+          <div
+            class="overflow-hidden bg-white rounded shadow-2xl text-slate-500 shadow-slate-200"
+          >
+            <div class="relative p-6">
+              <figure class="relative z-10">
+                <blockquote class="p-6 text-sm md:text-lg leading-relaxed">
+                  <p>
+                    Words can be like X-rays, if you use them properly—they’ll
+                    go through anything. You read and you’re pierced.
+                  </p>
+                </blockquote>
+                <figcaption
+                  class="flex items-center gap-4 p-6 pt-2 text-sm text-green-500"
+                >
+                  <img
+                    src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2019/05/testimonial2-free-img.jpg"
+                    alt="user name"
+                    title="user name"
+                    width="48"
+                    height="48"
+                    class="max-w-full rounded-full shrink-0"
+                  />
+                  <div class="flex flex-col gap-1">
+                    <span class="font-bold uppercase">Jack Brownn</span>
+                    <cite class="not-italic"
+                      ><a href="http://www.george-orwell.org/1984/0.html"
+                        >From London, UK</a
+                      ></cite
+                    >
+                  </div>
+                </figcaption>
+              </figure>
+              <svg
+                aria-hidden="true"
+                class="absolute z-0 h-16 left-6 top-6"
+                viewBox="0 0 17 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.79187 3.83333C2.66179 3.83333 2.53696 3.85316 2.41271 3.87125C2.45296 3.73591 2.49437 3.59825 2.56087 3.47458C2.62737 3.29491 2.73121 3.13916 2.83446 2.98225C2.92079 2.8125 3.07304 2.69758 3.18504 2.55233C3.30229 2.41116 3.46212 2.31725 3.58871 2.2C3.71296 2.0775 3.87571 2.01625 4.00521 1.92991C4.14054 1.85233 4.25837 1.76658 4.38437 1.72575L4.69879 1.59625L4.97529 1.48133L4.69237 0.35083L4.34412 0.43483C4.23271 0.46283 4.09679 0.495496 3.94221 0.53458C3.78412 0.563746 3.61554 0.643663 3.42771 0.71658C3.24221 0.799413 3.02754 0.855413 2.82804 0.988413C2.62737 1.11558 2.39579 1.22175 2.19162 1.39208C1.99387 1.56766 1.75529 1.71991 1.57912 1.94333C1.38662 2.15216 1.19646 2.3715 1.04887 2.62116C0.877957 2.85916 0.761873 3.1205 0.639373 3.37891C0.52854 3.63733 0.43929 3.90158 0.366373 4.15825C0.228123 4.67275 0.16629 5.16158 0.142373 5.57983C0.12254 5.99866 0.134207 6.34691 0.158707 6.59891C0.167457 6.71791 0.18379 6.83341 0.195457 6.91333L0.21004 7.01133L0.225207 7.00783C0.328959 7.49248 0.567801 7.93786 0.914102 8.29243C1.2604 8.64701 1.70001 8.89631 2.18208 9.01148C2.66415 9.12665 3.16897 9.10299 3.63815 8.94323C4.10733 8.78348 4.52169 8.49416 4.83331 8.10874C5.14493 7.72333 5.34107 7.25757 5.39903 6.76534C5.457 6.27311 5.37443 5.77452 5.16087 5.32726C4.94731 4.88 4.61149 4.50233 4.19225 4.23796C3.77302 3.97358 3.28751 3.8333 2.79187 3.83333V3.83333ZM9.20854 3.83333C9.07846 3.83333 8.95362 3.85316 8.82937 3.87125C8.86962 3.73591 8.91104 3.59825 8.97754 3.47458C9.04404 3.29491 9.14787 3.13916 9.25112 2.98225C9.33746 2.8125 9.48971 2.69758 9.60171 2.55233C9.71896 2.41116 9.87879 2.31725 10.0054 2.2C10.1296 2.0775 10.2924 2.01625 10.4219 1.92991C10.5572 1.85233 10.675 1.76658 10.801 1.72575L11.1155 1.59625L11.392 1.48133L11.109 0.35083L10.7608 0.43483C10.6494 0.46283 10.5135 0.495496 10.3589 0.53458C10.2008 0.563746 10.0322 0.643663 9.84437 0.71658C9.65946 0.799997 9.44421 0.855413 9.24471 0.988997C9.04404 1.11616 8.81246 1.22233 8.60829 1.39266C8.41054 1.56825 8.17196 1.7205 7.99579 1.94333C7.80329 2.15216 7.61312 2.3715 7.46554 2.62116C7.29462 2.85916 7.17854 3.1205 7.05604 3.37891C6.94521 3.63733 6.85596 3.90158 6.78304 4.15825C6.64479 4.67275 6.58296 5.16158 6.55904 5.57983C6.53921 5.99866 6.55087 6.34691 6.57537 6.59891C6.58412 6.71791 6.60046 6.83341 6.61212 6.91333L6.62671 7.01133L6.64187 7.00783C6.74563 7.49248 6.98447 7.93786 7.33077 8.29243C7.67707 8.64701 8.11668 8.89631 8.59875 9.01148C9.08081 9.12665 9.58563 9.10299 10.0548 8.94323C10.524 8.78348 10.9384 8.49416 11.25 8.10874C11.5616 7.72333 11.7577 7.25757 11.8157 6.76534C11.8737 6.27311 11.7911 5.77452 11.5775 5.32726C11.364 4.88 11.0282 4.50233 10.6089 4.23796C10.1897 3.97358 9.70417 3.8333 9.20854 3.83333V3.83333Z"
+                  class="fill-emerald-50"
+                />
+              </svg>
+            </div>
+          </div>
+          <!-- End Elevated base sized testimonial with avatar -->
+        </div>
+      </section>
+      <!-- testimonial end  -->
+
+      <!-- contact start  -->
+ 
+<section class="text-gray-600 body-font relative">
+  <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+    <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+      <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%C4%B0zmir+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+      <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+        <div class="lg:w-1/2 px-6">
+          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
+          <p class="mt-1">Photo booth tattooed prism, portland taiyaki hoodie neutra typewriter</p>
+        </div>
+        <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
+          <a class="text-green-500 leading-relaxed">example@email.com</a>
+          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
+          <p class="leading-relaxed">123-456-7890</p>
+        </div>
+      </div>
+    </div>
+    <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+      <h2 class="text-gray-900 text-2xl md:text-4xl mb-5 font-medium title-font">Send Us a Message
+      </h2>
+      <form  action="https://formspree.io/f/mvoelydq"
+      method="POST">
+        <div class="relative mb-4">
+          <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+          <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <div class="relative mb-4">
+          <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+          <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <div class="relative mb-4">
+          <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+          <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+        </div>
+        <button class="text-white bg-green-500 w-full border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Send</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+
+      <!-- footer start  -->
+      <footer
+        class="text-gray-600 body-font py-[60px] bg-gradient-to-r from-green-400 to-blue-500">
+        <div
+          class="container max-w-[1240px] mx-auto flex px-5 py-24 flex-row items-center text-center"
+        >
+          <div class="flex flex-col lg:w-[60%] m-auto items-center text-center">
+            <h2
+              class="title-font sm:text-4xl text-3xl mb-4 font-bold text-white"
+            >
+              Join Our 7452 Happy Students​ Today!
+            </h2>
+            <p
+              class="mb-8 leading-relaxed text-slate-300 font-medium text-lg mt-6"
+            >
+              Enter description text here. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Ut elit tellus, luctus nec
+              ullamcorper mattis, pulvinar dapibus leo.​
+            </p>
+            <!-- Component: Large primary basic button -->
+            <button
+  class="relative px-8 py-3 rounded-md bg-white isolation-auto z-10 border-2 text-lime-600 text-lg border-lime-500 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-lime-500 before:-z-10 before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700 hover:text-white hover:translate-y-3 duration-1000"
+>
+  
+View All Courses
+</button>
+            <!-- End Large primary basic button -->
+          </div>
+        </div>
+        <div class="border-t border-gray-200">
+          <p class="text-center mt-10 text-white font-medium text-lg">
+            Copyright © 2024 Jannatul Mitu
+          </p>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>
